@@ -25,9 +25,12 @@ Registry paths are not exhaustive; this is written for admins and power users wh
 - Enables Num Lock for all users, but only on desktops
   - WHY: Most full keyboards have a numberpad on the right. Annoyance.
 
-- Timezone set to Mountain Standard Time (MST). Sync time so it's not incorrect
+- (Disabled for now) Set correct timezone
   - WHY: Windows in the US defaults to Pacific Time when freshly installed. Annoyance.
   - NOTE: I use MST. Will update later to give a choice or allow for other timezones.
+
+- Sync time so it's not incorrect
+  - WHY: Windows sometimes misses timezone syncing. Why not? Helps with above also.
 
 ---
 
