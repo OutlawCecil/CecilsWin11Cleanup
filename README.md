@@ -1,5 +1,5 @@
 # Cecil's Win11 Cleanup
-`Cleanup-Win11.bat` is a one‑shot batch script for IT admins (or everyday users) that will cleanup, debloat, and optimize for performance. It works on Windows 10 but is designed for Windows 11
+This is my custom-made script for IT admins (or everyday users) that will cleanup, debloat, and optimize for performance. It works on Windows 10 but is designed for Windows 11. My goal here is to make a quick and easy way to fix annoyances and create a clean Windows experience.
 
 > **Warning:** This script makes system and registry changes. Test it in a VM or non‑critical machine first.
 
@@ -7,12 +7,12 @@
 
 ## What it does
 
-- **System basics**
+- **Basics**
   - Ensures it runs with admin rights 
   - Detects and shows Windows version/build
   - Runs with clean and clear output of changes / failures  
 
-- **Performance & UX**
+- **Performance boost**
   - Sets Num Lock on by default (desktops only)
   - Sets timezone to Mountain Standard Time and resyncs time
   - Applies “performance” visual settings (quicker response times)  
