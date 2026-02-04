@@ -14,7 +14,7 @@ This is my custom-made script for IT admins (or everyday users) that will cleanu
 
 - **Performance boost**
   - Sets Num Lock on by default (desktops only)
-  - Sets timezone to Mountain Standard Time and resyncs time
+  - Sync time to make sure it's accurate
   - Applies “performance” visual settings (quicker response times)  
   - Makes File Explorer open to “This PC” instead of recents
   - Cleans up cluttered context menus and Quick Access
