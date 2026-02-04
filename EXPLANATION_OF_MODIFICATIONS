@@ -9,9 +9,6 @@ Registry paths are not exhaustive; this is written for admins and power users wh
 
 ## 1. System & basics
 
-- Self‑elevates to run as admin if not already running as admin.
-  - Why: This is required for registry, services, and system changes.
-
 - Displays Windows product name, display version, and build
   - WHY: nice-to-have. Does not affect anything.
 
