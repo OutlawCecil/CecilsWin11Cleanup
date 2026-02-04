@@ -12,7 +12,7 @@ Registry paths are not exhaustive; this is written for admins and power users wh
 - Displays Windows product name, display version, and build
   - WHY: nice-to-have. Does not affect anything.
 
-- REGISTRY EDIT: Enable linked connections
+- Enable linked connections
   - WHY: Allows programs to "see" mapped/network drives. A common annoyance. Many programs need this.
 
 ---
