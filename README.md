@@ -5,7 +5,7 @@ This is my custom-made script for IT admins (or everyday users) that will cleanu
 
 ---
 
-## What it does
+## What it does (See EXPLANATION_OF_MODIFICATIONS for more detail)
 
 - **Basics**
   - Ensures it runs with admin rights 
