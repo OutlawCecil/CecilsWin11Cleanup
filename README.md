@@ -56,7 +56,8 @@ That said, many changes are low‑level registry and policy tweaks. Always verif
 2. Right‑click `Cleanup-Win11.bat` → **Run as administrator**.
 3. Follow the on‑screen output and prompts (e.g., optional OneDrive removal).
 4. Reboot when convenient to ensure all changes take effect.
-   NOTE: checkbox = change made, star = already in-place and skipped, X = can't / error 
+
+NOTE: checkbox = change made, star = already in-place and skipped, X = can't / error 
 
 ---
 
