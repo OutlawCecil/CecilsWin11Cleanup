@@ -1,0 +1,191 @@
+# Full List of Changes this script makes, and why
+
+This document lists the main changes made, grouped by area.  
+Registry paths are not exhaustive; this is written for admins and power users who may want to review or revert specific behavior.
+
+> Tested and targeted at modern Windows 10/11 builds. Some UI labels/paths may differ slightly between builds.
+
+---
+
+## 1. System & basics
+
+- Self‑elevates to run as admin if not already running as admin.
+  - Why: This is required for registry, services, and system changes.
+
+- Displays Windows product name, display version, and build
+  - WHY: nice-to-have. Does not affect anything.
+
+- REGISTRY EDIT: Enable linked connections
+  - WHY: Allows programs to "see" mapped/network drives. A common annoyance. Many programs need this.
+
+---
+
+## 2. Keyboard, timezone, and time
+
+- Enables Num Lock for all users, but only on desktops
+  - WHY: Most full keyboards have a numberpad on the right. Annoyance.
+
+- Timezone set to Mountain Standard Time (MST). Sync time so it's not incorrect
+  - WHY: Windows in the US defaults to Pacific Time when freshly installed. Annoyance.
+  - NOTE: I use MST. Will update later to give a choice or allow for other timezones.
+
+---
+
+## 3. Visual effects & Explorer behavior
+
+- Performance‑oriented visual changes
+  - WHY: Fewer animations for snappier response times. Transparency is on by default, but slows response times especially over remote sessions. People often don't notice lack of transparency. Noticable visual options are left turned on. Performance.
+    - Settings → Personalization → Colors → Transparency effects.
+    - Settings → Personalization → Colors → Show accent color on Start and taskbar.
+
+- Explorer opens to "This PC" instead of "Home" (Recents)
+  - WHY: Easier access to C: and/or mapped drives. Users who rely on recents often have no idea where their actual files are located. Switching computers is then near impossible and cleaning recents causes them to panic. Users should know where their files are. Annoyance & Privacy
+
+- Quick Access cache reset
+  - WHY: Fixes common issues in Windows related to Quick Access / recents. Also, Privacy.
+
+---
+
+## 4. Registry backup
+
+- Enable periodic registry backups
+  - WHY: This backup is almost instantanious and can save your computer. Microsoft disabled it, I added it back. Safety.
+
+---
+
+## 5. Windows Photo Viewer
+
+- **Restore Windows Photo Viewer**
+  - WHY: Very quick image viewer from Windows 7 / 10 that users are comfortable with. Less bloated than "Photos" app. More options are always better anyways! Also, it's literally still there, just disabled by default. Annoyance
+
+---
+
+## 6. Telemetry & diagnostics
+
+### 6.1 HOSTS‑based telemetry blocking
+
+- Adds many Microsoft telemetry/metrics endpoints to HOSTS
+  - WHY: Hosts file is an easy way to block telemetry and users will never notice. Sometimes this file is protected, so this step will fail, which is ok. Privacy
+
+### 6.2 Services, tasks, and policies
+
+- Disable Connected User Experiences and related Telemetry
+  - WHY: Used to provide you ads, and build a profile of your usage. Privacy
+    - Settings → Privacy & security → Diagnostics & feedback (partial).
+    - Full control via Services and Task Scheduler.
+
+- Telemetry level and data collection
+  - WHY: Used to provide you ads, and build a profile of your usage. Privacy
+    - UI: Settings → Privacy & security → Diagnostics & feedback → Diagnostic data.
+
+- Disable Windows Error Reporting
+  - WHY: Let's be honest, Microsoft doesn't care. Performance & Privacy
+    - UI: Settings → Privacy & security → Diagnostics & feedback → Optional diagnostic data & tailored experiences, plus WER policy (mostly registry/Group Policy).
+
+- Tailored experiences & feedback
+  - WHY: Used to provide you ads, and build a profile of your usage. Privacy
+    - UI: Settings → Privacy & security → Diagnostics & feedback.
+
+---
+
+## 7. Copilot and cloud / consumer content
+
+- Disable Copilot
+  - WHY: Bloatware. Users will install it if they want it. Also, Performance.
+    - UI: Settings → Personalization → Taskbar → Copilot (or similar, depending on build).
+
+- Disable Windows consumer experiences / suggestions
+  - WHY: Used to provide you ads, and build a profile of your usage. Privacy
+    - Settings → System → Notifications (turn off “Tips and suggestions”).
+    - Settings → Personalization → Start (turn off “Show recommendations”, etc.).
+    - Settings → Privacy & security → General (for some suggestions toggles).
+
+- Restrict Background apps
+  - WHY: Keep more open resources for activly-used programs. Also extends batteries on laptops. Performance
+    - Settings → Apps → Installed apps → individual app background permissions;  
+    - Settings → Privacy & security → App permissions → Background apps.
+
+---
+
+## 8. Search, Start menu, and notifications
+
+- Disable web/Bing integration in Start/search
+  - WHY: Bloatware, Performance, Privacy, Annoyance
+    - UI: Settings → Privacy & security → Search permissions (disable “Cloud content search” etc.).
+
+- Disable Start suggestions & recommendations
+  - WHY: Used to provide you ads, and build a profile of your usage. Privacy
+    - UI: Settings → Personalization → Start (toggle various “Show recommendations…” and “Show recently added apps”).
+
+- Disable Program Compatibility Assistant
+  - WHY: Rarely helps and can be manually run by those who know what they're doing. Performance & Annoyance.
+
+---
+
+## 9. File associations, attachment/security prompts
+
+- Adjust Attachment Manager / low‑risk file types
+  - WHY: Removes some common Windows popups after launching files, warning about possible dangers. Just requires more clicks and wasted time. This shouldn't be the users responsability anyways. Use Antivirus. Annoyance & Performance.
+
+---
+
+## 10. Office & Outlook behavior (if installed)
+
+- Prefer local save locations in Microsoft Office
+  - WHY: Microsoft has decided everyone uses OneDrive. Revert to previous default saving of files to local drive. They can pick OneDrive if desired. Annoyance & Performance
+    - In Office apps → Options → Save → “Show additional places for saving” / “AutoSave” and similar (version‑dependent).
+
+- Disable forced “New Outlook” migration
+  - WHY: Microsoft has decided to force users to stop using Outlook Classic by moving them to the New Outlook. Many users need/want features from Classic. It should be their choice. They even have a slider switch in the upper right to manually switch when wanted. Annoyance.
+
+---
+
+## 11. Power, sleep, and hibernation
+
+- Disable hibernation
+  - WHY: Some computers have issues recovering from hibernation, especially repeated hibernations without reboots. Also instantly free's up disk space equal to your RAM size. Stop using Hibernation and turn off / sleep your computer. Performance & Annoyance
+    - Settings → System → Power & battery → Additional power settings → Choose what the power buttons do.
+
+- Disable sleep (If plugged in)
+  - WHY: Some computers have issues recovering from sleep, especially repeated sleeps without reboots. (although less often than hibernation) If unlimited power provided, why save minimal power and cause issues? Annoyance & Performance
+    - UI: Settings → System → Power & battery → Screen and sleep.
+
+- Disable Modern Standby on desktops
+  - WHY: List full/traditional power plan options instead of S0 Modern Standby (minimal) options. aka Full control and less power saving for desktops. Performance & Annoyance
+
+---
+
+## 12. Start menu shortcuts & junk removal
+
+- Removes bloatware / junk shortcuts such as Netflix, Disney+, TikTok, Prime Video, OEM promo links, etc.
+  - WHY: Users can add their own if wanted. Annoyance. 
+
+---
+
+## 13. Context menu cleanup
+
+- Remove lesser‑used context menu options
+  - WHY: Cleans up context menu options most users won't use, to reduce over-bloated menus and make them more familiar to Windows 7 / 10 users. Annoyance.
+
+---
+
+## 14. OneDrive (optional) and user account tweak
+
+- Optional OneDrive uninstall and cleanup
+  - WHY: Onedrive is preinstalled on Windows 10/11, but users can install it if needed/wanted. Performance & Annoyance
+    - Settings → Apps → Installed apps → Microsoft OneDrive → Uninstall.
+    - OneDrive settings → Account → Unlink this PC.
+
+---
+
+## 15. Networking, logging, and other low‑level tweaks
+
+- Disable SCHANNEL event logging
+  - WHY: Helps clean up event logs and reduce continual and repeated pointless logs. Annoyance, and maybe a touch of Performance. 
+
+- Disable Driver/software signing requirement
+  - WHY: Causes issues often. Users shouldn't be installing drivers from dangerous sources anyways. Allows for legacy (older) hardware and software and overall compatibility when upgrading to Windows 11. Annoyance 
+
+---
+
+Again, this batch file was originally created for my own use based on my own experiences working in IT. If you rely on any of these behaviors, review this list before running the script in production, and consider forking or editing the batch file to match your environment’s standards.
