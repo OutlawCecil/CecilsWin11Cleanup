@@ -57,7 +57,10 @@ That said, many changes are low‑level registry and policy tweaks. Always verif
 3. Follow the on‑screen output and prompts (e.g., optional OneDrive removal).
 4. Reboot when convenient to ensure all changes take effect.
 
-NOTE: checkbox = change made, star = already in-place and skipped, X = can't / error 
+NOTE: 
+✓ = change made
+☆ = already in-place and skipped
+𐄂 = can't / error 
 
 ---
 
