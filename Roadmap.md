@@ -8,4 +8,4 @@
 
 
 ## Upcoming planned changes
-- Option to choose timezone instead of hard‑coding MST.
+- Script modifies timezone to MST, but I commented it out. Option to choose timezone instead of hard‑coding MST will be added soon.
