@@ -68,7 +68,19 @@ Registry paths are not exhaustive; this is written for admins and power users wh
 ### 6.1 HOSTS‑based telemetry blocking
 
 - Adds many Microsoft telemetry/metrics endpoints to HOSTS
-  - WHY: Hosts file is an easy way to block telemetry and users will never notice. Sometimes this file is protected, so this step will fail, which is ok. Privacy
+  - WHY: Hosts file is an easy way to block telemetry and users will never notice. Sometimes this file is protected, so this step will fail, which is ok. Boy-o-boy is Win11 noisy! Privacy
+    -[something].data.microsoft.com x5 (core telemetry blocking)
+    -[something].watson.[something] x6 related to error reporting & crash telemetry
+    -misc x12 related to "Customer Experience Improvement Program"
+    -more [something].data.microsoft.com x2 related to "Windows diagnostic settings & configuration"
+    -misc x7 related to Bing / Store / app‑level telemetry & usage
+    -feedback.[something] x3 related to “Send feedback”
+    -i1.[something] x 2 related to “connected experiences”
+    -misc x2 related to Upgrade / compatibility / targeting / predictive services
+    -corp[something] x2 related to Microsoft auth / service endpoints. May affect Azure, if in use.
+    -misc x4 related to CDN / infrastructure endpoints
+    -diagnostics.support.microsoft.com related to Diagnostics & support on their site
+    -misc x3 Miscellaneous / older or generic telemetry previously and/or lesser used
 
 ### 6.2 Services, tasks, and policies
 
@@ -160,15 +172,42 @@ Registry paths are not exhaustive; this is written for admins and power users wh
 
 ## 12. Start menu shortcuts & junk removal
 
-- Removes bloatware / junk shortcuts such as Netflix, Disney+, TikTok, Prime Video, OEM promo links, etc.
-  - WHY: Users can add their own if wanted. Annoyance. 
-
+- Removes bloatware / junk shortcuts from start menu
+  - WHY: Users can add their own if wanted. Annoyance.
+    -Default Programs.lnk (Lesser-used)
+    -XPS Viewer.lnk (Lesser-used)
+    -Sidebar.lnk (Lesser-used)
+    -Windows Fax and Scan.lnk (Lesser-used)
+    -Media Center.lnk (Lesser-used)
+    -Miracast PlayTo renderer.lnk (Lesser-used)
+    -Adobe offers.lnk (junk/bloat)
+    -Booking.lnk (junk/bloat)
+    -LastPass.lnk (junk/bloat)
+    -Accessories\Math Input Panel.lnk (Lesser-used)
+    -Windows Tools\Windows Media Player Legacy.lnk (Lesser-used)
+    -Spotify.lnk (junk/bloat)
+    -Disney+.lnk (junk/bloat)
+    -Netflix.lnk (junk/bloat)
+    -Instagram.lnk (junk/bloat)
+    -TikTok.lnk (junk/bloat)
+    -Prime Video.lnk (junk/bloat)
+    -LinkedIn.lnk (junk/bloat)
+    -Booking.com.url (junk/bloat)
+    -Elvenar.url (junk/bloat)
+    -Forge of Empires.url (junk/bloat)
+    -Planet9 Link.url (junk/bloat)
+    -NOTE: Please let me know if you see others so I can add them.
 ---
 
-## 13. Context menu cleanup
+## 13. Context menu (right click menu) cleanup
 
 - Remove lesser‑used context menu options
   - WHY: Cleans up context menu options most users won't use, to reduce over-bloated menus and make them more familiar to Windows 7 / 10 users. Annoyance.
+    -Restore previous versions (Accessed through Properties, if needed)
+    -Compatibility (Accessed through Properties, if needed)
+    -Pin to Start (Do this in the start menu, where it should be)
+    -Pin to Quick access / Pin to Home (I'm 50/50 on this one. Bloats explorer)
+    -NOTE: Please let me know if you recommend others
 
 ---
 
