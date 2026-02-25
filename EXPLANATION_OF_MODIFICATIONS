@@ -44,6 +44,9 @@ Registry paths are not exhaustive; this is written for admins and power users wh
 - Quick Access cache reset
   - WHY: Fixes common issues in Windows related to Quick Access / recents. Also, Privacy.
 
+- Cleanup Taskbar
+  - WHY: Remove weather widget by default. Also removed chat / Teams icon. Annoyance & Performance
+
 ---
 
 ## 4. Registry backup
@@ -131,6 +134,9 @@ Registry paths are not exhaustive; this is written for admins and power users wh
 
 - Disable Program Compatibility Assistant
   - WHY: Rarely helps and can be manually run by those who know what they're doing. Performance & Annoyance.
+
+- Disable Edge Sidebar and Hubs
+  - WHY: Edge specific telemetry as well as shopping assistant nonsense. Privacy & Performance.
 
 ---
 
