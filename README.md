@@ -1,5 +1,5 @@
 # Cecil's Win11 Cleanup
-This is my custom-made script for IT admins (or everyday users) that will cleanup, debloat, and optimize for performance. It works on Windows 10 but is designed for Windows 11. My goal here is to make a quick and easy way to fix annoyances and create a clean Windows experience.
+This is my custom-made script for IT admins (or everyday users) that will cleanup, debloat, and optimize for performance. It works on Windows 10 but is designed for Windows 11. My goal here is to make a quick and easy way to fix annoyances and create a clean Windows experience. Changes target all user accounts where possible but still needs run on every profile for max optimization. Irreversible changes are avoided. (Most edits can be undone via Windows Settings.)
 
 > **Warning:** This script makes system and registry changes. Test it in a VM or non‑critical machine first, if worried. I use this multiple times per day, and through the years.
 
