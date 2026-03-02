@@ -65,6 +65,12 @@ NOTE:
 
 ---
 
+## Download / Run / Install / Utilize
+
+See latest release: https://github.com/OutlawCecil/CecilsWin11Cleanup/releases
+
+---
+
 ## License & attribution
 
 - License: **MIT** (see `LICENSE`).
