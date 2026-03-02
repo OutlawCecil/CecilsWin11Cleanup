@@ -51,6 +51,12 @@ That said, many changes are low‑level registry and policy tweaks. Always verif
 
 ---
 
+## Download / Run / Install / Utilize
+
+See latest release: https://github.com/OutlawCecil/CecilsWin11Cleanup/releases
+
+---
+
 ## Usage
 
 1. Download or clone this repository.
@@ -62,12 +68,6 @@ NOTE:
 ✓ = change made  
 ☆ = already in-place and skipped  
 𐄂 = can't / error  
-
----
-
-## Download / Run / Install / Utilize
-
-See latest release: https://github.com/OutlawCecil/CecilsWin11Cleanup/releases
 
 ---
 
