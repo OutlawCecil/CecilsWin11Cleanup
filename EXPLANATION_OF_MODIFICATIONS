@@ -47,6 +47,9 @@ Registry paths are not exhaustive; this is written for admins and power users wh
 - Cleanup Taskbar
   - WHY: Remove weather widget by default. Also removed chat / Teams icon. Annoyance & Performance
 
+- Drag Tray removal
+  - WHY: Disabled Windows "Drag Tray" by default so it nolonger blocks dragging files to the top row of desktop! Annoyance
+
 ---
 
 ## 4. Registry backup
