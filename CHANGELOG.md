@@ -2,8 +2,13 @@
 
 All notable changes to this project will be documented in this file as versions increase.
 
+## [4.5] - 2026-03-11
+- Found and fixed another elevated permissions issue; hopefully the last of it
+- Utilized new policy found on the latest Win11 to remove apps from new profiles
+- Consistancy fixes
+
 ## [4.43] - 2026-03-02
-- Finalized fixes for issue with elevated permissions, which was addressed in 4.42
+- More fixes for issue with elevated permissions, which was addressed in 4.42
 - Windows 11 Drag Tray was added to latest release. Removed by default
 - Added current user and user's SID to top of the script to confirm targeting
 
