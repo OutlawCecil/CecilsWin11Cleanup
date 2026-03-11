@@ -6,4 +6,4 @@
 
 
 # Upcoming planned changes
-- Script modifies timezone to MST, but I commented it out. Option to choose timezone instead of hard‑coding MST will be added soon.
+- Script will set correct timezone. Windows defaults to pacific
