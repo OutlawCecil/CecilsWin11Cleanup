@@ -123,6 +123,9 @@ Registry paths are not exhaustive; this is written for admins and power users wh
     - Settings → Apps → Installed apps → individual app background permissions;  
     - Settings → Privacy & security → App permissions → Background apps.
 
+- Cleanup bloatware apps for new profiles
+  - WHY: Microsoft added new policy to help with cleanup of new user profiles. User can manually reinstall. Performance & Annoyance
+
 ---
 
 ## 8. Search, Start menu, and notifications
