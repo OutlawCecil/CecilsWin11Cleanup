@@ -7,3 +7,4 @@
 
 # Upcoming planned changes
 - Script will set correct timezone. Windows defaults to pacific
+- Working on the OneDrive detection/uninstall part of the script
