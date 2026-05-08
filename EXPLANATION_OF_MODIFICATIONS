@@ -1,4 +1,4 @@
-# Full List of Changes this script makes, and why
+# Full List of Changes this script makes, and why, as of the latest release
 
 This document lists the main changes made, grouped by area.  
 Registry paths are not exhaustive; this is written for admins and power users who may want to review or revert specific behavior.
@@ -12,9 +12,6 @@ Registry paths are not exhaustive; this is written for admins and power users wh
 - Displays Windows product name, display version, and build
   - WHY: nice-to-have. Does not affect anything.
 
-- Enable linked connections
-  - WHY: Allows programs to "see" mapped/network drives. A common annoyance. Many programs need this.
-
 ---
 
 ## 2. Keyboard, timezone, and time
@@ -22,9 +19,9 @@ Registry paths are not exhaustive; this is written for admins and power users wh
 - Enables Num Lock for all users, but only on desktops
   - WHY: Most full keyboards have a numberpad on the right. Annoyance.
 
-- (Disabled for now) Set correct timezone
+- Set correct timezone
   - WHY: Windows in the US defaults to Pacific Time when freshly installed. Annoyance.
-  - NOTE: I use MST. Will update later to give a choice or allow for other timezones.
+  - NOTE: If Pacific Time Zone is detected, it offers to change it to other common time zones
 
 - Sync time so it's not incorrect
   - WHY: Windows sometimes misses timezone syncing. Why not? Helps with above also.
@@ -49,6 +46,9 @@ Registry paths are not exhaustive; this is written for admins and power users wh
 
 - Drag Tray removal
   - WHY: Disabled Windows "Drag Tray" by default so it nolonger blocks dragging files to the top row of desktop! Annoyance
+
+- Enable linked connections
+  - WHY: Allows programs to "see" mapped/network drives. A common annoyance. Many programs need this.
 
 ---
 
@@ -220,7 +220,17 @@ Registry paths are not exhaustive; this is written for admins and power users wh
 
 ---
 
-## 14. OneDrive (optional) and user account tweak
+## 14. Other Optimizations
+
+- Disable Xbox Game Bar
+  - WHY: Not used by many people and it's always running by default. Enable if wanted. Performance
+
+- Disable VBS / Core Isolation
+  - WHY: One of the biggest performance wins on Windows 11, especially for gaming. Performance
+
+---
+
+## 15. OneDrive (optional) and user account tweak
 
 - Optional OneDrive uninstall and cleanup
   - WHY: Onedrive is preinstalled on Windows 10/11, but users can install it if needed/wanted. Performance & Annoyance
@@ -229,7 +239,7 @@ Registry paths are not exhaustive; this is written for admins and power users wh
 
 ---
 
-## 15. Networking, logging, and other low‑level tweaks
+## 16. Networking, logging, and other low‑level tweaks
 
 - Disable SCHANNEL event logging
   - WHY: Helps clean up event logs and reduce continual and repeated pointless logs. Annoyance, and maybe a touch of Performance. 
