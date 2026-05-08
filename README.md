@@ -15,11 +15,14 @@ This is my custom-made script for IT admins (or everyday users) that will cleanu
 
 - **Performance boost**
   - Sets Num Lock on by default (desktops only)
+  - Detect possible wrong time-zone and offer to fix
   - Sync time to make sure it's accurate
   - Applies “performance” visual settings (quicker response times)  
   - Makes File Explorer open to “This PC” instead of recents
   - Cleans up cluttered context menus and Quick Access
   - Disables sleep/hibernation when plugged in (maintain availability for remote access)
+  - Disables core isolation
+  - Disables Xbox game bar
 
 - **Privacy & telemetry**
   - Blocks a large list of Microsoft telemetry/metrics endpoints via HOSTS file
@@ -32,6 +35,7 @@ This is my custom-made script for IT admins (or everyday users) that will cleanu
   - Restores Windows Photo Viewer as an image viewer option
   - Removes various preinstalled shortcuts and promo links from the Start menu
   - Tweaks Office/Outlook defaults (prefer local save, disable forced “New Outlook” migration) when present
+  - Disables app auto-installs for new profiles & uninstalls bloat Win11 apps for current profile
 
 - **Safety**
   - Enables periodic registry backups
