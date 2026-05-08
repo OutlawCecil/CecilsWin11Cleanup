@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file as versions increase.
 
+## [4.61] - 2026-05-08
+- Disable VBS / Core Isolation for more performance gains
+- Disable Xbox Game Bar for more performance gains
+- Timezone detection and options
+- Consistancy fixes
+
 ## [4.5] - 2026-03-11
 - Found and fixed another elevated permissions issue; hopefully the last of it
 - Utilized new policy found on the latest Win11 to remove apps from new profiles
